@@ -28,39 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblThread = new System.Windows.Forms.Label();
             this.btnRun = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblThread
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(63, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "* Before starting thread *";
+            this.lblThread.AutoSize = true;
+            this.lblThread.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThread.ForeColor = System.Drawing.Color.Black;
+            this.lblThread.Location = new System.Drawing.Point(91, 64);
+            this.lblThread.Name = "lblThread";
+            this.lblThread.Size = new System.Drawing.Size(237, 24);
+            this.lblThread.TabIndex = 1;
+            this.lblThread.Text = "* before starting thread *";
             // 
             // btnRun
             // 
+            this.btnRun.BackColor = System.Drawing.Color.DarkMagenta;
             this.btnRun.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRun.Location = new System.Drawing.Point(105, 93);
+            this.btnRun.ForeColor = System.Drawing.Color.White;
+            this.btnRun.Location = new System.Drawing.Point(105, 95);
             this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(146, 34);
+            this.btnRun.Size = new System.Drawing.Size(146, 42);
             this.btnRun.TabIndex = 2;
             this.btnRun.Text = "Run";
-            this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.UseVisualStyleBackColor = false;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
-            // Form1
+            // FrmBasicThread
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Plum;
             this.ClientSize = new System.Drawing.Size(362, 206);
             this.Controls.Add(this.btnRun);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Controls.Add(this.lblThread);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "FrmBasicThread";
             this.Text = "Basic Thread";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -68,7 +73,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblThread;
         private System.Windows.Forms.Button btnRun;
     }
 }

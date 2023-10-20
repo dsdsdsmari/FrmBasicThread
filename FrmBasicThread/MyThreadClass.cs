@@ -12,7 +12,7 @@ namespace FrmBasicThread
         public static void Thread1()
         {
 
-            for (int LoopCount = 1; LoopCount <= 5; LoopCount++)
+            for (int LoopCount = 0; LoopCount <= 5; LoopCount++)
             {
                 Thread thread = Thread.CurrentThread;
                 Console.WriteLine("Name of thread: " + thread.Name + " = " + LoopCount);
